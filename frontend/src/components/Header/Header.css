@@ -1,0 +1,157 @@
+/* Base Header Styles */
+.header {
+  width: 100%;
+  padding: 20px 0;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.sticky__header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  animation: slideDown 0.3s ease forwards;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+
+/* Logo */
+.logo img {
+  width: 200px;
+}
+
+/* Navigation Links */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s;
+  font-size: 17px;
+}
+
+.nav__item a:hover,
+.active__link {
+  color: #007bff;
+}
+
+/* Navigation Right Section */
+.nav__right {
+  display: flex;
+  align-items: center;
+}
+
+.nav__btns .btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.nav__btns h5 {
+  color: #007bff;
+}
+
+.secondary__btn {
+  background: transparent;
+  border: 2px solid #007bff;
+  color: #007bff;
+}
+
+.secondary__btn a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.primary__btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.primary__btn a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Mobile Menu Icon */
+.mobile__menu {
+  font-size: 1.5rem;
+  display: none;
+  cursor: pointer;
+}
+
+.mobile__auth {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .mobile__auth {
+    display: flex;
+  }
+
+  .nav__btns.d-none {
+    display: none !important;
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .navigation {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+
+  .navigation.show__menu {
+    display: flex;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .nav__right {
+    gap: 1rem;
+  }
+
+  .mobile__menu {
+    display: block;
+  }
+
+  .nav__btns {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}
+
+/* Animation */
+@keyframes slideDown {
+  from {
+    top: -80px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+

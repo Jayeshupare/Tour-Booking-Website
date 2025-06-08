@@ -1,0 +1,229 @@
+.hero__subtitle img{
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+.hero__content h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: var(--heading-color);
+}
+
+.hero__subtitle h2 .highlight{
+    color: var(--heading-color);
+} 
+
+.hero__content p{
+    font-size: 1.1rem;
+    color: var(--heading-color);
+}
+
+.hero__img-box img, .hero__img-box video {
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    border: 1px solid var(--secondary-color);
+    object-fit: cover;
+}
+
+.hero__content{
+    padding-top: 3.5rem;
+}
+
+.hero__img-box{
+    padding-top: 2rem;
+}
+
+.services__subtitle{
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: var(--subtitle-font-name);
+}
+
+.services__title {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.featured__tour-title {
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+/* Base Styles */
+.experience-new {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+.experience-new__info h3 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #0b2727;
+  margin-bottom: 1rem;
+}
+
+.experience-new__info p {
+  font-size: 1.1rem;
+  color: #6e7074;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+.experience-new__info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.experience-new__info ul li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #444;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.experience-new__info ul li::before {
+  position: absolute;
+  left: 0;
+  color: #007bff;
+}
+
+/* Stats Boxes */
+.experience-new__stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 20px;
+}
+
+.stat__box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 1.5rem;
+  flex: 1 1 40%;
+  min-width: 150px;
+}
+
+.stat__box h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #007bff;
+}
+
+.stat__box p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .experience-new__info h3 {
+    font-size: 1.75rem;
+  }
+
+  .stat__box {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-new {
+    padding: 40px 0;
+  }
+
+  .experience-new__info {
+    text-align: center;
+  }
+
+  .experience-new__info ul li {
+    font-size: 0.95rem;
+  }
+
+  .stat__box {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-new__info h3 {
+    font-size: 1.5rem;
+  }
+
+  .experience-new__info p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .experience-new__info ul li {
+    font-size: 0.95rem;
+    text-align: start;
+    padding-left: 4.5rem;
+  }
+
+  .stat__box h3 {
+    font-size: 1.5rem;
+  }
+
+  .stat__box p {
+    font-size: 0.95rem;
+  }
+}
+
+
+.gallery__title{
+    font-size: 2.3rem;
+    margin-bottom: 2.5rem;
+    margin-top: 1rem;
+}
+
+.masonry__img{
+    transition: 0.3s;
+}
+
+.masonry__img:hover{
+    transform: scale(1.1);
+}
+
+.testimonial__title{
+    font-size: 2.3rem;
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .hero__content h1 {
+        font-size: 2.7rem;
+    }
+
+    .hero__img-box {
+        display: none;
+    }
+
+    .hero__video-box {
+        display: block;
+    }
+
+    .services__title, .featured__tour-title, .gallery__title, .testimonial__title, .experience__content h3 {
+        font-size: 2rem;
+    }
+
+    .experience__img {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .hero__content h1{
+        font-size: 1.8rem;
+    }
+
+    .services__title, .featured__tour-title, .gallery__title, .testimonial__title, .experience__content h3{
+        font-size: 1.5rem;
+    }
+}
